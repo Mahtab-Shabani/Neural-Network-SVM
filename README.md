@@ -1,6 +1,6 @@
-# Neural-Network-SVM
+## Neural-Network-SVM
 
-### Input data:
+#### Input data:
 ```
 load fisheriris     % Load data
 data = meas(1:100,1:2);
@@ -9,23 +9,23 @@ group = species(1:100); % lable of classes
 
 note: Fisher's iris data consists of measurements on the sepal length, sepal width, petal length, and petal width for 150 iris specimens. There are 50 specimens from each of three species.
 
-### Train network:
+#### Train network:
 ```
 svmStruct = svmtrain(data,group,'showplot',true); % train network
 ```
 
-### Crossvalidation:
+#### Crossvalidation:
 ```
 [train, test] = crossvalind('holdOut',group);
 cp = classperf(group);
 ```
 
-### test network:
+#### test network:
 ```
 classes= svmclassify(svmStruct,data(test,:),'showplot',false);
 ```
 
-### Evaluate performance of classifier:
+#### Evaluate performance of classifier:
 ```
 classperf(cp,classes,test);
 CorrectRate=cp.CorrectRate;
