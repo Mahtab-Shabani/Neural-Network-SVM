@@ -1,4 +1,4 @@
-### Neural-Network-SVM
+## Neural-Network-SVM
 
 **Input data:**
 ```
@@ -25,7 +25,8 @@ cp = classperf(group);
 classes= svmclassify(svmStruct,data(test,:),'showplot',false);
 ```
 
-**Evaluate performance of classifier:**
+Evaluate performance of classifier:
+=========
 ```
 classperf(cp,classes,test);
 CorrectRate=cp.CorrectRate;
