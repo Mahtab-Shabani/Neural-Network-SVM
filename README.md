@@ -33,8 +33,13 @@ CorrectRate=cp.CorrectRate;
 ErrorRate=cp.ErrorRate;
 ```
 
+**Linear classification:**
+
 ![image](https://user-images.githubusercontent.com/21992001/187100731-9809e4cc-76c0-4bc7-b5da-febf06f1c78e.png)
 
+**Non-linear classification using RBF kernel:**
 ![image](https://user-images.githubusercontent.com/21992001/187100744-f34eb1bc-9a58-4957-bb80-f33c84b17322.png)
+
+**Non-linear classification using quadratic kernel:**
 
 ![image](https://user-images.githubusercontent.com/21992001/187100756-daa9b90c-b82c-4860-b130-629f3c4d1648.png)
